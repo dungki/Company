@@ -48,18 +48,13 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
-                                <a href="about.html">about</a>
-                                @Html.ActionLink("About","About","Home")
+                                @Html.ActionLink("About", "About", "Home")
                             </li>
                             <li class="nav-item dropdown mr-lg-4 my-lg-0 my-sm-4 my-3">
-                                <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="job_list.html">Job List</a>
-                                    <a href="job_single.html">Job Single</a>
-                                </div>
+                                @Html.ActionLink("Job List", "Job_list", "Page")
+                            </li>
+                            <li class="nav-item dropdown mr-lg-4 my-lg-0 my-sm-4 my-3">
+                                @Html.ActionLink("Job Single", "Job_single", "Page")
                             </li>
                             <li class="nav-item mr-lg-4 my-lg-0 mb-sm-4 mb-3">
                                 <a href="contact.html">contact</a>
